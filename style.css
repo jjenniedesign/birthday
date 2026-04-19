@@ -30,17 +30,14 @@ body {
 
 h1 {
   position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
-  margin: 0;
-
   font-size: clamp(40px, 10vw, 120px);
-  width: 90%;
 }
-
 
 h1 span {
   display: block;
@@ -135,7 +132,7 @@ h2 {
   z-index: 10;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
-  animation-delay: 9s;
+  animation-delay: 9.5s;
 }
 @keyframes fadeIn {
   to {
@@ -145,7 +142,7 @@ h2 {
 
 .envelope {
   width: clamp(120px, 20vw, 200px);
-  max-width: 140px;
+  max-width: 280px;
   aspect-ratio: 14 / 9;
   position: relative;
   cursor: pointer;
@@ -224,18 +221,15 @@ h2 {
   animation: fadeUp 0.8s ease forwards;
 }
 
-.container > *:nth-child(1) { animation-delay: 1s; }
-.container > *:nth-child(2) { animation-delay: 2s; }
-.container > *:nth-child(3) { animation-delay: 3s; }
-.container > *:nth-child(4) { animation-delay: 4s; }
+.container > *:nth-child(1) { animation-delay: 1.5s; }
+.container > *:nth-child(2) { animation-delay: 2.5s; }
+.container > *:nth-child(3) { animation-delay: 4s; }
 
-.date-btn {
-  animation-delay: 4s;
-}
+
 
 .page {
   animation: fadeUp 0.8s ease forwards;
-  animation-delay: 5s;
+  animation-delay: 6.5s;
 }
 
 .cat {
@@ -249,7 +243,7 @@ h2 {
   opacity: 0;
 
   animation: fadeUp 0.8s ease forwards;
-  animation-delay: 6s; 
+  animation-delay: 7.75s; 
   scale: 65%; 
 }
 
@@ -264,7 +258,7 @@ h2 {
   opacity: 0;
 
   animation: fadeUp 0.8s ease forwards;
-  animation-delay: 6.5s; 
+  animation-delay: 7.25s; 
   scale: 65%; 
 }
 
@@ -287,7 +281,7 @@ h2 {
   transform: translate(-20%, 20%); /* slightly off-screen bottom-left */
 
   animation: fadeFromCorner 1s ease forwards;
-  animation-delay: 5.5s; /* AFTER .page (5s) */
+  animation-delay: 6.75s; /* AFTER .page (5s) */
 }
 
 @keyframes fadeFromCorner {
@@ -344,14 +338,14 @@ h2 {
   transform: translate(20%, 20%); /* slightly off-screen bottom-left */
 
   animation: fadeUp 1s ease forwards;
-  animation-delay: 8s; /* AFTER .page (5s) */
+  animation-delay: 8.5s; /* AFTER .page (5s) */
   scale: 60%;
 }
 
 .hearts {
   position: absolute;
-  bottom: -50%;
-  right: 25%;
+  bottom: 10%;
+  right: 40%;
 
   width: 20%;
   z-index: 5;
@@ -359,8 +353,8 @@ h2 {
   opacity: 0;
 
   animation: fadeUp 1s ease forwards;
-  animation-delay: 4s; /* AFTER .page (5s) */
-  scale: 50%;
+  animation-delay: 5s; /* AFTER .page (5s) */
+  scale: 120%;
 }
 
 
