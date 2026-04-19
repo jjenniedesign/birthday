@@ -27,18 +27,20 @@ body {
   font-size: clamp(18px, 2.5vw, 30px);
 }
 
+
 h1 {
   position: fixed;
-  top: 25%;
-  left: 35%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  
+
   text-align: center;
   margin: 0;
 
-  font-size: clamp(70px, 14vw, 160px);
-  z-index: 10;
+  font-size: clamp(40px, 10vw, 120px);
+  width: 90%;
 }
+
 
 h1 span {
   display: block;
@@ -125,14 +127,15 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   z-index: 10;
-  opacity: 0; /* start hidden */
+  opacity: 0;
   animation: fadeIn 1s ease forwards;
-  animation-delay: 9s; /* AFTER .page (which is 5s) */
-  scale: 250%;
+  animation-delay: 9s;
 }
 @keyframes fadeIn {
   to {
@@ -141,7 +144,7 @@ h2 {
 }
 
 .envelope {
-  width: 10%;
+  width: clamp(120px, 20vw, 200px);
   max-width: 140px;
   aspect-ratio: 14 / 9;
   position: relative;
