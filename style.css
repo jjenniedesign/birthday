@@ -249,29 +249,24 @@ body {
 
 .hbd {
   position: absolute;
-  top: 60%;
+  bottom: -55%;
   left: 40%;
-
-  width: clamp(200px, 30vw, 500px); /* responsive size */
-
+  width: 20%;
   z-index: 5;
   opacity: 0;
-
   animation: fadeUp 1s ease forwards;
   animation-delay: 4s;
+  scale: 150%;
 }
 
 .envelope {
   position: absolute;
-  top: 170%;
-  left: 39%;
-
-  width: clamp(200px, 30vw, 500px); /* responsive size */
-
+  bottom: -150%;
+  left: 40%;
+  width: 20%;
   z-index: 5;
   opacity: 0;
-
   animation: fadeUp 1s ease forwards;
   animation-delay: 9s;
-  scale: 50%;
+  scale: 80%;
 }
