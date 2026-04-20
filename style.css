@@ -4,14 +4,12 @@ body {
   background: #ffffff;
 }
 
-/* ===== MAIN LAYOUT ===== */
 .container {
   padding: 5%;
   position: relative;
   z-index: 1;
 }
 
-/* ===== TOP BANNER ===== */
 .top-banner {
   background: #b7d1e6;
   padding: 1.5%;
@@ -21,7 +19,6 @@ body {
   font-size: 200%;
 }
 
-/* ===== TEXT ===== */
 .name {
   margin-top: 5%;
   font-size: clamp(18px, 2.5vw, 30px);
@@ -29,7 +26,6 @@ body {
 
 
 
-/* ===== POSITIONED ELEMENT ===== */
 .click-section {
   position: absolute;
   right: 5%;
@@ -37,7 +33,6 @@ body {
   text-align: center;
 }
 
-/* ===== CARD ===== */
 .card {
   width: 15%;
   height: 10%;
@@ -45,7 +40,6 @@ body {
   border-radius: 1vw;
 }
 
-/* ===== BACKGROUND LAYER ===== */
 .page {
   position: absolute;
   top: 0;
@@ -55,7 +49,6 @@ body {
   pointer-events: none;
 }
 
-/* ===== CONFETTI ===== */
 .confetti {
   position: absolute;
   width: 12%;
@@ -75,7 +68,6 @@ body {
   transform: rotate(35deg) scale(2);
 }
 
-/* ===== SPIDERMAN ===== */
 .spiderman {
   position: absolute;
   top: 50%;
@@ -83,7 +75,6 @@ body {
   width: 15%;
 }
 
-/* ===== FADE OUT ===== */
 #mainContent {
   transition: opacity 0.8s ease;
 }
@@ -94,7 +85,6 @@ body {
 
 
 
-/* ===== LETTER ===== */
 .letter-overlay {
   position: fixed;
   top: 0;
@@ -139,7 +129,6 @@ body {
   text-align: justify;
 }
 
-/* ===== ANIMATIONS ===== */
 .container > * {
   opacity: 0;
   transform: translateY(20px);
